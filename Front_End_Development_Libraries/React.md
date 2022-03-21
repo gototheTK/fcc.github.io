@@ -79,3 +79,7 @@
         }));
 
     Note that you have to wrap the object literal in parentheses, otherwise JavaScript thinks it's a block of code.
+
+### Add Event Listeners
+
+React provides a synthetic event system which wraps the native event system present in browsers. This means that the synthetic event system behaves exactly the same regardless of the user's browser - even if the native events may behave differently between different browsers.
