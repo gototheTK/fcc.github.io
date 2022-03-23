@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+#drum-machine {
+  background-color: #00471b;
+  width: 750px;
+  height: 500px;
+  margin: 80px auto;
+  padding: 90px 20px 0 20px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.display {
+  background-color: #040404;
+  width: 615px;
+  height: 120px;
+  
+}
+
+.drum-pad {
+  background-color: #ffffff;
+  position: relative;
+  width: 200px;
+  height: 100px;
+  margin: 2px;
+  float: left;
+  border-radius: 0 0 3px 3px;
+  font-size: 50px;
+}
+
+drum-pad::after {
+  background-color: #1d1e22;
+  content: "";
+  position: absolute;
+  left: -18px;
+  width: 32px;
+  height: 100px;
+  border-radius: 0 0 3px 3px;
+}
+
+.logo {
+  width: 200px;
+  position: absolute;
+  top: 23px;
+}
+
+@media (max-width: 768px) {
+  #piano {
+    width: 335px;
+  }
+
+  .keys {
+    width: 318px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {
+  #piano {
+    width: 675px;
+  }
+  
+  .keys {
+    width: 633px;
+  }
+}
